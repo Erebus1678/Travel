@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--reset + normalize css-->
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/icons/Vector.svg" type="image/png">
+    <title>Travel</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hamburger" id="Hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="hamburger-menu">
+            <ul class="hamburger-menu__list">
+                <li class="hamburger-menu__item"><a href="#howItWorks">How It Works</a></li>
+                <li class="hamburger-menu__item"><a href="#popularDestinations">Destinations</a></li>
+                <li class="hamburger-menu__item"><a href="#PlanYourTrip">Plan Your Trip</a></li>
+                <li class="hamburger-menu__item"><a href="#travelStories">Travel Stories</a></li>
+                <li class="hamburger-menu__item">Account</li>
+                <li class="hamburger-menu__item"><a href="#icons">Social Media</a></li>
+            </ul>
+        </div>
+        <div class="first-bg">
+            <!-- header -->
+            <header class="header">
+
+                <!-- header logo -->
+                <div class="header-wrapper container">
+                    <div class="header__logo">
+                        <div class="header__icon-img">
+                            <a href="#">
+                                <img src="./assets/icons/Vector.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="header__icon-text">
+                            <a href="#">
+                                <p>Travel Portal</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- header nav menu -->
+                    <nav class="header__nav redhead">
+                        <ul class="header__nav-menu">
+                            <li class="header__nav-menu__item"><a href="#howItWorks">How It Works</a></li>
+                            <li class="header__nav-menu__item"><a href="#PlanYourTrip">Plan Your Trip</a></li>
+                            <li class="header__nav-menu__item"><a href="#popularDestinations">Destinations</a></li>
+                            <li class="header__nav-menu__item"><a href="#travelStories">Travel Stories</a></li>
+                        </ul>
+                    </nav>
+                    <!-- header login button -->
+                    <div class="header__button btn">
+                        <button class="header__button_main btn__main redhead" id="loginBtn">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <!-- text -->
+            <div class="pop-up hidden">
+                <div class="pop-up__window">
+                    <h3 class="pop-up__window__title">Log in to your account</h3>
+                    <div class="pop-up__window__sign-via-btn">
+                        <a href="#" class="via-facebook"><img src="./assets/icons/pop-up/facebook.svg"
+                                alt="facebook logo">
+                            &ensp;Sign In with Facebook
+                        </a>
+                        <a href="#" class="via-google"><img src="./assets/icons/pop-up/google.svg"
+                                alt="google logo">&ensp;Sign
+                            In
+                            with Google</a>
+                    </div>
+                    <div class="pop-up__window__hr">
+                        <hr>or
+                        <hr>
+                    </div>
+                    <div class="pop-up__window__form">
+                        <form action="" method="get" class="form">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="Email" id="email" />
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" />
+                            <input type="submit" value="Sign In" id="sign-in" />
+                            <a href="#" class="form_link">Forgot Your Password?</a>
+                        </form>
+                    </div>
+                    <hr class="pop-up__window__second-hr">
+                    <div class="pop-up__window__reg">
+                        <p class="pop-up__window__reg_text">Don’t have an account?</p>
+                        <a class="pop-up__window__reg_link">Register</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="first-page__wrapper container" id="PlanYourTrip">
+                <div class="first-page">
+                    <div class="first-page__text">
+                        <h1 class="first-page__text_title">Explore the beauty of the World</h1>
+                        <p class="first-page__text_subtitle">Receive personalized recommendations for countries, hotels,
+                            activities and more</p>
+                        <!-- input -->
+                        <form class="first-page__form" method="get">
+                            <input class="first-page__input_text" type="search" name="search-plan"
+                                placeholder="       What would you like to do?" required>
+                            <input type="submit" class="first-page__input_btn" value="Start Planning">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second frame -->
+        <div class="second-wrapper" id="howItWorks">
+            <section class="second-frame container">
+                <h2 class="second-frame__title redhead">
+                    3 STEPS TO THE PERFECT TRIP
+                </h2>
+                <div class="second-frame__icons-box icons-box">
+                    <!-- first icon -->
+                    <div class="icons-box__item">
+                        <img class="icons-box__icon" src="./assets/icons/biker.svg" alt="">
+                        <p class="icons-box__icon__text">Tell us what you want to do</p>
+                    </div>
+                    <!-- second icon -->
+                    <div class="icons-box__item">
+                        <img class="icons-box__icon" src="./assets/icons/calendar.svg" alt="">
+                        <p class="icons-box__icon__text">Share us preferable dates</p>
+                    </div>
+                    <!-- third icon -->
+                    <div class="icons-box__item">
+                        <img class="icons-box__icon" src="./assets/icons/fly.svg" alt="">
+                        <p class="icons-box__icon__text">We will give you recommendations</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- third frame -->
+        <div class="third-frame__wrapper">
+            <section class="third-frame" id="popularDestinations">
+                <h2 class="third-frame__title redhead">
+                    POPULAR DESTINATIONS
+                </h2>
+
+                <div class="slider__container">
+                    <!-- slide Spain -->
+                    <div class="slider__item">
+                        <img src="./assets/img/slider/spain.jpg" alt="photo from SPAIN" class="slider__item_img"
+                            id="firstSlide">
+                        <p class="slider__item_text redhead">SPAIN</p>
+                    </div>
+                    <!-- slide Japan -->
+                    <div class="slider__item">
+                        <img src="./assets/img/slider/japan.jpg" alt="photo from Japan" class="slider__item_img"
+                            id="secondSlide">
+                        <p class=" slider__item_text redhead">JAPAN</p>
+                    </div>
+                    <!-- slide USA  -->
+                    <div class="slider__item">
+                        <img src="./assets/img/slider/usa.jpg" alt="photo from USA" class="slider__item_img"
+                            id="thirdSlide">
+                        <p class=" slider__item_text redhead">USA</p>
+                    </div>
+                </div>
+                <div class="next"></div>
+                <div class="prev"></div>
+                <div class="dots_mobile">
+                    <button class="dots_mobile__item"></button>
+                    <button class="dots_mobile__item active"></button>
+                    <button class="dots_mobile__item"></button>
+                </div>
+            </section>
+            <!-- dots for slider -->
+            <div class="dots">
+                <button class="dots__item_1"></button>
+                <button class="dots__item_2 active"></button>
+                <button class="dots__item_3"></button>
+            </div>
+
+            <div class="third-frame__button btn">
+                <button class="third-frame__button_main btn__main">
+                    →&ensp;Find More
+                </button>
+            </div>
+        </div>
+        <!-- fourth frame -->
+        <div class="fourth-frame scroll" id="travelStories">
+            <h2 class="fourth-frame__title">
+                TRAVEL STORIES
+            </h2>
+            <!-- image bg -->
+            <div class="second-bg">
+                <section class="fourth-frame__section">
+                    <h3>&ensp;</h3>
+                    <div class="fourth-frame__wrapper container">
+                        <!-- first story -->
+                        <article class="fourth-frame__article">
+                            <img src="./assets/img/article_stories/first.jpg" alt="first story photo">
+                            <div class="fourth-frame__article__text">
+                                <H3 class="fourth-frame__article__text_title">
+                                    10 Photos of Attractive Thailand
+                                </H3>
+                                <p class="fourth-frame__article__text_paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna lorem
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisialiqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                    amet, consectetur adipiscing elit... <br>
+                                    <a href="#">Read More</a>
+                                </p>
+                            </div>
+                        </article>
+                        <!-- second story -->
+                        <article class="fourth-frame__article">
+                            <img src="./assets/img/article_stories/second.jpg" alt="second story photo">
+                            <div class="fourth-frame__article__text">
+                                <H3 class="fourth-frame__article__text_title">
+                                    Canyonlands National Park, Utah
+                                </H3>
+                                <p class="fourth-frame__article__text_paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna lorem
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisialiqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                    amet, consectetur adipiscing elit... <br>
+                                    <a href="#">Read More</a>
+                                </p>
+                            </div>
+                        </article>
+                        <!-- third story -->
+                        <article class="fourth-frame__article">
+                            <img src="./assets/img/article_stories/third.jpg" alt="third story photo">
+                            <div class="fourth-frame__article__text">
+                                <H3 class="fourth-frame__article__text_title">
+                                    I left my heart in the Mountains!
+                                </H3>
+                                <p class="fourth-frame__article__text_paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna lorem
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisialiqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                    amet, consectetur adipiscing elit... <br>
+                                    <a href="#">Read More</a>
+                                </p>
+                            </div>
+                        </article>
+                        <!-- fourth story -->
+                        <article class="fourth-frame__article">
+                            <img src="./assets/img/article_stories/fourth.jpg" alt="fourth story photo">
+                            <div class="fourth-frame__article__text">
+                                <H3 class="fourth-frame__article__text_title">
+                                    The Longest journey in my life!
+                                </H3>
+                                <p class="fourth-frame__article__text_paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna lorem
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisialiqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                    amet, consectetur adipiscing elit... <br>
+                                    <a href="#">Read More</a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="fourth-frame__button btn">
+                        <button class="fourth-frame__button_main btn__main">
+                            →&ensp;See More
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3>&ensp;</h3>
+                    <footer class="footer container">
+                        <footer class="footer container scroll" id="icons">
+
+                            <footer class="footer container scroll" id="icons">
+                                <ul class="footer__my-icons">
+                                    <li class="footer__my-icons__item">
+                                        <a href="https://github.com/Erebus1678/" target="_blank">
+                                            <img src="./assets/icons/footer/akar-icons_github-outline-fill.svg"
+                                                alt="github icon" class="footer__my-icons__item_img">
+                                        </a>
+                                    </li>
+                                    <li class="footer__my-icons__item">
+                                        <a href="https://rs.school/js-stage0/" target="_blank">
+                                            <img src="./assets/icons/footer/rs_school_js_white.svg" alt=""
+                                                class="rs_school_js_icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="footer__text">
+                                    <p class="footer__text__paragraph redhead">All Rights Reserved © Travel
+                                        Portal</p>
+                                </div>
+                                <ul class="footer__icons">
+                                    <li class="footer__icons-item">
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <img src="./assets/icons/footer/akar-icons_instagram-fill.svg"
+                                                alt="instagram icon" class="footer__icons-item_scale">
+                                        </a>
+                                    </li>
+                                    <li class="footer__icons-item">
+                                        <a href="https://www.youtube.com/" target="_blank">
+                                            <img src="./assets/icons/footer/akar-icons_video.svg" alt="video icon"
+                                                class="footer__icons-item_scale">
+                                        </a>
+                                    </li>
+                                    <li class="footer__icons-item">
+                                        <a href="https://twitter.com/?lang=ru" target="_blank">
+                                            <img src="./assets/icons/footer/akar-icons_twitter-fill.svg"
+                                                alt="twitter icon" class="footer__icons-item_scale">
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </footer>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./JS/pop-up.js"></script>
+    <script src="./JS/burger.js"></script>
+    <script src="./JS/slider.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
